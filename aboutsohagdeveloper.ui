@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutSohagDeveloper</class>
+ <widget class="QDialog" name="AboutSohagDeveloper">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>207</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About Sohag Developer</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="logo">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="sohag-developer.qrc">:/images/logo.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="about">
+     <property name="text">
+      <string>Software Application For Developing and Creating Forms and the Qt/C++ Class For PostgreSQL.
+Sohag Developer will generate the required GUI Forms (Qt UI Files) and the Qt/C++ class code
+which contains the SQL DML statmaents to maniuplate data in a database table or view.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="thanks">
+     <property name="text">
+      <string>
+Many thanks to Qt Framwork, SQLite and Qt Installer Framwork.
+
+Sohag Developer and respective logos are trademarks of The Sohag Developer Team.
+Qt and respective logos are trademarks of The Qt Company Ltd.
+All other trademarks are property of their respective owners.</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="sohag-developer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

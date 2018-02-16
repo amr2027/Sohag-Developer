@@ -1,0 +1,208 @@
+﻿/*
+MainWindow::title{
+background-color:#e1f0fa;
+}*/
+#basicWidget{
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #97cbed, stop:1 #fff);
+background-image: url(:/images/egypharma-back.png) ;
+background-repeat: no-repeat;
+background-position: center;
+
+} 
+
+.QTreeView{
+background-color:#ffffff;
+      alternate-background-color: yellow;
+}
+
+.QFrame[frameType="bodyFrame"]{
+background-color:#97cbed;
+
+}
+
+
+.QFrame[frameType="toolBarFrame"]{
+background-color:#cee3f1;
+}
+
+.QMessageBox{
+background-color:#fff;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #fff, stop:1 #97cbed);}
+QGroupBox{
+background-color:#cee3f1;
+border: 1px solid #fff;
+font-weight: bold;
+	 border-radius: 10px;
+	  margin-top: 3ex;
+}
+
+
+QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center; /* position at the top center */
+     padding: 0 3px;
+
+ }
+	 
+		 
+QPushButton ,QToolButton{
+    /* Let's make the size of the button 1,5 times of font size. */
+ /*   min-height: 1.5em; */
+    /* Font size just 1.*/
+    /*font: 1em;*/
+    /* Margins so that we get a little space on the left and right. */
+    margin: 0 1px 0 1px;
+    /* The font color */ 
+    color: white;
+    /* Here's the background gradient with start point, end point, 
+       stop "percentage" and color, stop percentage and color. */
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #0879bd, stop: 1 #6bcfff);
+    /* We'll round the borders. */
+    border-style: ridge;
+    /* Round radius will be 3px */
+    border-radius: 3px;
+    /* Border is only one pixel */
+    border-width: 1px;
+    /* Border color is now set */
+    border-color: #6bcfff;
+	     min-width: 23ex;
+	 min-height:6ex ;
+     padding: 2px;
+	 font-weight: bold;
+}
+ QPushButton:hover ,QToolButton:hover {
+    /* We'll just invert the gradient by changing the colors around. */
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #6bcfff, stop: 1 #0879bd);
+									  border-color: #fff;
+									      border-width: 2px;
+
+									  
+}	
+/* This is style when button is pressed */
+QPushButton:pressed ,QToolButton:pressed{
+    /* We'll just invert the gradient by changing the colors around. */
+    background-color: #389dd7;
+    border-style: outset;
+    border-width: 2px;
+}		 
+
+QPushButton:disabled ,QToolButton:disabled{
+    /* We'll just invert the gradient by changing the colors around. */
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #97cbed, stop: 1 #a4c0d2);
+									      border-color: #6eb3db;
+										  border-color: #bdcbdd;
+									  color:#0879bd ;
+
+}	
+
+
+ QTableView {
+     background: #fff;
+       alternate-background-color: yellow;
+}
+
+ 
+QHeaderView::section {
+background-color:#97cbed;
+
+}
+
+ 
+ QMenuBar ,QMenu{
+     /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 #97cbed, stop:1 #fff);*/
+	background-color:#97cbed;
+    font-weight: bold;									   
+ }
+
+ QMenuBar::item {
+     spacing: 3px; /* spacing between menu bar items */
+     padding: 1px 4px;
+     background: transparent;
+     border-radius: 4px;
+ }
+
+ QMenuBar::item:selected { /* when selected using mouse or keyboard */
+     background: #97cbed;
+ }
+
+ QMenuBar::item:pressed {
+     background: #fff;
+ } 
+  
+QDockWidget {
+     border: 1px solid #eaeef7;
+min-width:200px ;
+ }
+
+ QDockWidget::title {
+     text-align: left; /* align the text to the left */
+     background: #cee3f1;
+     padding-left: 5px;
+ }
+
+
+
+  QMainWindow::separator {
+     background: #cee3f1;
+     width: 10px; /* when vertical */
+     height: 10px; /* when horizontal */
+ }
+
+ 
+/* #LogIn {border:2px solid #2cadff  ;background-image: url(:/images/egypharma.png);  }   */
+
+ #LogIn {border:2px solid #2cadff  ; background: #97cbed; background-image: url(:/images/egypharma.png); }
+ #login_frame_2
+ {
+border:4px solid white;  ; background: #2cadff; 
+ }
+ 
+ #userNameLogIn  , #passWordLogIn , #logInYearLogIn ,#logInMassenger ,#titleLable
+ {
+ font-weight: bold;	
+ color:white ;
+ text-align:center;
+ 
+  }
+ 
+ #showCalendar,#load{
+    min-width: 23px;
+   max-width: 23px;
+   min-height:6ex ;
+}
+
+ButttonForDelegate{
+	  min-width: 15px;
+	  max-width: 20px;
+}
+
+QToolButton::menu-button {
+     border:2px solid white;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     /* 16px width + 4px for border = 20px allocated above */
+     width: 16px;
+ }
+
+ 
+ 
+  QProgressBar {
+      border: 2px solid grey;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+
+  QProgressBar::chunk {
+      background-color: #05B8CC;
+      width: 20px;
+  }
+  
+    QListView {
+      alternate-background-color: yellow;
+  }
